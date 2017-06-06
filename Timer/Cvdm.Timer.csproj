@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.2;net35;net45</TargetFrameworks>
+    <AssemblyName>Cvdm.Timer</AssemblyName>
+    <RootNamespace>Cvdm.Timer</RootNamespace>
+    <Authors>Christer van der Meeren</Authors>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company />
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Schedules execution of code.</Description>
+    <PackageLicenseUrl>https://github.com/cmeeren/Cvdm.Timer/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://github.com/cmeeren/Cvdm.Timer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cmeeren/Cvdm.Timer</RepositoryUrl>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>Add support for .NET Fremework 3.5</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Cvdm.Timer.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'!='net35'">
+    <DefineConstants>FEATURE_ASSEMBLY_METADATA_ATTRIBUTE</DefineConstants>
+  </PropertyGroup>
+
+</Project>

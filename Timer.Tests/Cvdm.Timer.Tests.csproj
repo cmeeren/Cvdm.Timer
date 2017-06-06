@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netcoreapp1.0</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+    <AssemblyName>Cvdm.Timer.Tests</AssemblyName>
+    <RootNamespace>Cvdm.Timer.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="4.19.2" />
+    <PackageReference Include="xunit.core" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Timer\Cvdm.Timer.csproj" />
+  </ItemGroup>
+
+</Project>
