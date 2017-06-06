@@ -80,7 +80,7 @@ namespace Cvdm.Timer.Tests
             this.RunTimerUntilStopped();
 
             // Assert
-            this.raisedAt[0].Should().BeCloseTo(this.startTime, 30);
+            this.raisedAt[0].Should().BeCloseTo(this.startTime, 50);
         }
 
         [Theory]
