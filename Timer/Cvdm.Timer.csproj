@@ -13,14 +13,14 @@
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/cmeeren/Cvdm.Timer</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cmeeren/Cvdm.Timer</RepositoryUrl>
-    <Version>1.0.0</Version>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Fix: TimerFactory now returns ITimer</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Cvdm.Timer.xml</DocumentationFile>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)'!='net35'">

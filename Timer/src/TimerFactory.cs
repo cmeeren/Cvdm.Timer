@@ -4,7 +4,7 @@
     public class TimerFactory : ITimerFactory
     {
         /// <inheritdoc />
-        public DefaultTimer Create()
+        public ITimer Create()
         {
             return new DefaultTimer();
         }

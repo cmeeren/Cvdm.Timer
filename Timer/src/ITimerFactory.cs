@@ -5,6 +5,6 @@
     {
         /// <summary>Creates a timer.</summary>
         /// <returns>A timer that can be used to schedule execution of code.</returns>
-        DefaultTimer Create();
+        ITimer Create();
     }
 }
