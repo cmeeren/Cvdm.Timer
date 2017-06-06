@@ -1,11 +1,12 @@
 # Cvdm.Timer
 Schedules execution of a C# callback using a friendly `System.Threading.Timer` wrapper.
 
-This library is easy to use with dependency injection. Inject `ITimerFactory` into your components, and use `ITimerFactory.Create()` to create an `ITimer`.
+This library is easy to use with dependency injection:
 
+* Inject `ITimerFactory` into your components, and use `ITimerFactory.Create()` to create an `ITimer`.
 * In production use, register `TimerFactory` as an implementation of `ITimerFactory`.
 * In your tests, mock `ITimerFactory` and set up `ITimerFactory.Create()` to return a mock `ITimer`. Raise the `ITimer.Elapsed` event manually as needed.
-* **Note:** `ITimer` is disposable, and you should not inject it unless you know what you're doing.
+* **Note:** `ITimer` is disposable, and you should not inject it directly unless you know what you're doing. Use `ITimerFactory` instead.
 
 Here's the API of the `ITimer` interface:
 
