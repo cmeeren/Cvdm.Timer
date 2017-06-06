@@ -5,20 +5,22 @@
     <AssemblyName>Cvdm.Timer</AssemblyName>
     <RootNamespace>Cvdm.Timer</RootNamespace>
     <Authors>Christer van der Meeren</Authors>
-    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <Company />
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Description>Schedules execution of code.</Description>
+    <Description>Periodically raises an event. DI-friendly.</Description>
     <PackageLicenseUrl>https://github.com/cmeeren/Cvdm.Timer/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/cmeeren/Cvdm.Timer</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cmeeren/Cvdm.Timer</RepositoryUrl>
-    <Version>1.0.3</Version>
-    <PackageReleaseNotes>Add support for .NET Fremework 3.5</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Cvdm.Timer.xml</DocumentationFile>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)'!='net35'">
